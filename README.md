@@ -1,6 +1,6 @@
-#TypeScript Express Mongoose Boilerplate
+# TypeScript Express Mongoose Boilerplate
 
-##Scripts
+## Scripts
 
 Start the server in development mode with auto refresh on change
 
@@ -15,15 +15,15 @@ Seed data for testing. This will create 10 users with the default password "Test
 
     npm run seed
 
-##Environment Settings
+## Environment Settings
 
 There is a .env file in the root folder that contains all definitions.
 Using the dotenv NPM package, it will load it into the process.env object.
 <b>It is recommended that you add the .env to your gitignore when cloning this project as it will contain sensitive data.</b>
 
-##Endpoints
+## Endpoints
 
-###Login
+### Login
 
 [POST] http://localhost:3006/api/auth
 
@@ -38,7 +38,7 @@ Response:
     "token": "EncryptedJWTToken"
 }
 
-###Get Profile
+### Get Profile
 
 [GET] http://localhost:3006/api/user/profile
 
@@ -47,5 +47,5 @@ Headers:
     "Authorization": "Bearer {{tokenReceivedFromAuthResponse}}"
 }
 
-#####Notes: 
+##### Notes: 
 There is a POSTMAN (2.1) collection included in the root directory: API-Boilerplate.postman_collection.json
